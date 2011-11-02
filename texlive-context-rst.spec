@@ -43,6 +43,7 @@ which seems to be readable as text, but...
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/scripts/context/lua/third/rst/mtx-t-rst.lua
 %{_texmfdistdir}/tex/context/interface/third/t-rst.xml
 %{_texmfdistdir}/tex/context/third/rst/rst_context.lua
 %{_texmfdistdir}/tex/context/third/rst/rst_directives.lua
@@ -71,4 +72,4 @@ which seems to be readable as text, but...
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+cp -fpar scripts tex doc %{buildroot}%{_texmfdistdir}
