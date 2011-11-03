@@ -1,3 +1,9 @@
+# revision 24199
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-rst
+# catalog-date 2011-10-03 11:06:20 +0200
+# catalog-license other-free
+# catalog-version 0.4
 Name:		texlive-context-rst
 Version:	0.4
 Release:	1
@@ -63,6 +69,7 @@ which seems to be readable as text, but...
 %doc %{_texmfdistdir}/doc/context/third/rst/manual.pdf
 %doc %{_texmfdistdir}/doc/context/third/rst/manual.tex
 %doc %{_texmfdistdir}/doc/context/third/rst/moduletest.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -73,3 +80,5 @@ which seems to be readable as text, but...
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
