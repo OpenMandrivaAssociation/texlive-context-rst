@@ -18,8 +18,6 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires(post):	texlive-context
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package provides a converter and module for typesetting
@@ -27,24 +25,12 @@ reStructuredText with ConTeXt. The module uses several lua
 scripts in doing its work. Documentation is supplied in rst,
 which seems to be readable as text, but...
 
-%pre
-    %_texmf_mtxrun_pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-    %_texmf_mtxrun_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_pre
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
-	%_texmf_mtxrun_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -69,7 +55,6 @@ which seems to be readable as text, but...
 %doc %{_texmfdistdir}/doc/context/third/rst/manual.pdf
 %doc %{_texmfdistdir}/doc/context/third/rst/manual.tex
 %doc %{_texmfdistdir}/doc/context/third/rst/moduletest.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -80,5 +65,3 @@ which seems to be readable as text, but...
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
