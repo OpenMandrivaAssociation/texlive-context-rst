@@ -1,4 +1,4 @@
-# revision 24199
+# revision 27236
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-rst
 # catalog-date 2011-10-03 11:06:20 +0200
@@ -6,7 +6,7 @@
 # catalog-version 0.4
 Name:		texlive-context-rst
 Version:	0.4
-Release:	2
+Release:	3
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
