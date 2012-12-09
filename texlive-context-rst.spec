@@ -65,3 +65,22 @@ which seems to be readable as text, but...
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-3
++ Revision: 812176
+- Update to latest release.
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-2
++ Revision: 750505
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
++ Revision: 718140
+- texlive-context-rst
+- texlive-context-rst
+- texlive-context-rst
+- texlive-context-rst
+- texlive-context-rst
+
