@@ -1,4 +1,4 @@
-# revision 27236
+# revision 29575
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-rst
 # catalog-date 2011-10-03 11:06:20 +0200
@@ -6,7 +6,7 @@
 # catalog-version 0.4
 Name:		texlive-context-rst
 Version:	0.4
-Release:	3
+Release:	4
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
@@ -65,22 +65,3 @@ which seems to be readable as text, but...
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-3
-+ Revision: 812176
-- Update to latest release.
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-2
-+ Revision: 750505
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
-+ Revision: 718140
-- texlive-context-rst
-- texlive-context-rst
-- texlive-context-rst
-- texlive-context-rst
-- texlive-context-rst
-
