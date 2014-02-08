@@ -6,7 +6,7 @@
 # catalog-version 0.4
 Name:		texlive-context-rst
 Version:	0.4
-Release:	3
+Release:	4
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
