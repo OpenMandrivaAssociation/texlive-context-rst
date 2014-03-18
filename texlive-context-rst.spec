@@ -1,12 +1,12 @@
-# revision 29575
+# revision 33092
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-rst
-# catalog-date 2011-10-03 11:06:20 +0200
+# catalog-date 2014-03-03 08:58:55 +0100
 # catalog-license other-free
-# catalog-version 0.4
+# catalog-version 0.6c
 Name:		texlive-context-rst
-Version:	0.4
-Release:	8
+Version:	0.6c
+Release:	1
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
@@ -43,8 +43,8 @@ which seems to be readable as text, but...
 %{_texmfdistdir}/tex/context/third/rst/rst_parser.lua
 %{_texmfdistdir}/tex/context/third/rst/rst_setups.lua
 %{_texmfdistdir}/tex/context/third/rst/t-rst.mkiv
-%doc %{_texmfdistdir}/doc/context/third/rst/COPYING
-%doc %{_texmfdistdir}/doc/context/third/rst/README.rst
+%doc %{_texmfdistdir}/doc/context/third/rst/OMakefile
+%doc %{_texmfdistdir}/doc/context/third/rst/OMakefile.omc
 %doc %{_texmfdistdir}/doc/context/third/rst/documentation.rst
 %doc %{_texmfdistdir}/doc/context/third/rst/hybridtest.tex
 %doc %{_texmfdistdir}/doc/context/third/rst/inc-first.rst
