@@ -1,18 +1,12 @@
-# revision 33092
-# category ConTeXt
-# catalog-ctan /macros/context/contrib/context-rst
-# catalog-date 2014-03-03 08:58:55 +0100
-# catalog-license other-free
-# catalog-version 0.6c
 Name:		texlive-context-rst
-Version:	0.6c
-Release:	6
+Version:	47085
+Release:	1
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,39 +20,23 @@ scripts in doing its work. Documentation is supplied in rst,
 which seems to be readable as text, but...
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/scripts/context/lua/third/rst/mtx-t-rst.lua
+%{_texmfdistdir}/scripts/context/lua/third/rst
 %{_texmfdistdir}/tex/context/interface/third/t-rst.xml
-%{_texmfdistdir}/tex/context/third/rst/rst_context.lua
-%{_texmfdistdir}/tex/context/third/rst/rst_directives.lua
-%{_texmfdistdir}/tex/context/third/rst/rst_helpers.lua
-%{_texmfdistdir}/tex/context/third/rst/rst_parser.lua
-%{_texmfdistdir}/tex/context/third/rst/rst_setups.lua
-%{_texmfdistdir}/tex/context/third/rst/t-rst.mkiv
-%doc %{_texmfdistdir}/doc/context/third/rst/OMakefile
-%doc %{_texmfdistdir}/doc/context/third/rst/OMakefile.omc
-%doc %{_texmfdistdir}/doc/context/third/rst/documentation.rst
-%doc %{_texmfdistdir}/doc/context/third/rst/hybridtest.tex
-%doc %{_texmfdistdir}/doc/context/third/rst/inc-first.rst
-%doc %{_texmfdistdir}/doc/context/third/rst/inc-second.rst
-%doc %{_texmfdistdir}/doc/context/third/rst/inc-third.rst
-%doc %{_texmfdistdir}/doc/context/third/rst/inc.tex
-%doc %{_texmfdistdir}/doc/context/third/rst/manual.bib
-%doc %{_texmfdistdir}/doc/context/third/rst/manual.pdf
-%doc %{_texmfdistdir}/doc/context/third/rst/manual.tex
-%doc %{_texmfdistdir}/doc/context/third/rst/moduletest.tex
+%{_texmfdistdir}/tex/context/third/rst
+%doc %{_texmfdistdir}/doc/context/third/rst
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
