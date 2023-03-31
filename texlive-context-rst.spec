@@ -1,6 +1,6 @@
 Name:		texlive-context-rst
 Version:	47085
-Release:	1
+Release:	2
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
