@@ -3,7 +3,7 @@ Version:	47085
 Release:	2
 Summary:	Process reStructuredText with ConTeXt
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-rst
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-rst
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-rst.doc.r%{version}.tar.xz
